@@ -21,7 +21,7 @@ session_token = (Math.random() * Math.pow(2, 70)).toString(36)
 
 campaign = findGetParameter('utm_campaign') || 'no_campaign'
 product = findGetParameter('product')  || 'no_product'
-version = '1.0'
+version = '4.0'
 server = 'https://pourover.ambroselli.tech'
 
 start_time = new Date()
