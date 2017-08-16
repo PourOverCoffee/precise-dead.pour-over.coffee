@@ -31,6 +31,10 @@ body, html{
   color: white;
 }
 
+h2 {
+  word-wrap: break-word;
+}
+
 
 /* Sections */
 
