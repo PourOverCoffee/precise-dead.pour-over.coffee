@@ -9,6 +9,10 @@
   fbq('init', '1434436959980967'); // Insert your pixel ID here.
   fbq('track', 'PageView');
 
+  fbq('track', 'currentPath', {
+    valueToSum: window.location.pathname
+  });
+
   fbq('track', 'Search', {
     search_string: findGetParameter('product')
   });
