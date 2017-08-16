@@ -118,7 +118,11 @@ NAVIGATION BAR
               </div>
               <div class="text text-medium text-center">
                 <p><span style="font-weight: 400;">%PRODUCT_DESCRIPTION_1%!</span></p>
+              </div>              
+              <div class="text-center">
+                <a href="thanks.html" type="button" class="btn btn-default btn-lg tryButton" id="tryButton">Try it out!</a>
               </div>
+
             </div>
           </div>
         </div>
@@ -193,7 +197,6 @@ NAVIGATION BAR
 
 
   <script>
-<<<<<<< HEAD
   function addScollListenerToId(id) {
     element = document.getElementById(id)
     new Waypoint({
@@ -255,7 +258,7 @@ NAVIGATION BAR
     jQuery(function () {
       jQuery.scrollDepth();
     });
-    $('#tryButton').attr('href', 'thanks.html?product=03_organic'+'&'+window.location.search.replace('?', ''))
+    $('.tryButton').each(function() { this.attr('href', 'thanks.html?product=03_organic'+'&'+window.location.search.replace('?', '')) })
   </script>
 </body>
 
