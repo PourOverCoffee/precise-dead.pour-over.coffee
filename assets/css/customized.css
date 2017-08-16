@@ -47,8 +47,13 @@ body, html{
   background-position: 66% 8%;
 }
 
+.features {
+  background: white;
+  text-align: center;
+}
+
 .features .text {
-  color: white !important;
+  color: black !important;
 }
 
 .showroom .text {
