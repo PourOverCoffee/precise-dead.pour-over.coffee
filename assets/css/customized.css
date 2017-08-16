@@ -42,7 +42,7 @@ h2 {
   color: black !important;
 }
 
-#actionShot {
+.actionShot {
   height: 70%;
   width: 100%;
   background-image: url(/assets/actionShot.jpg);
