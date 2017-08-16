@@ -17,13 +17,17 @@ body, html{
 }
 
 /* NEWSLETTER SIGNUP */
-.callToAction  a{
+.callToAction  a, .tryButton {
   background: #91c11e;
+  border: none;
+  border-radius: 2px;
+  text-transform: uppercase;
   color: white;
 }
 
-.callToAction  a:hover{
+.callToAction  a:hover,  .tryButton:hover{
   background: #79a119;
+  border: none;
   color: white;
 }
 
