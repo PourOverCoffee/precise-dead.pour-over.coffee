@@ -1,34 +1,3 @@
-<!--
-PRODUKT_ID
-
-HEADLINE
-SHORT_PITCH
-
-FEATURE_1
-FEATURE_DESCRIPTION_1
-FEATURE_2
-FEATURE_DESCRIPTION_2
-FEATURE_3
-FEATURE_DESCRIPTION_3
-
-SHOWROOM_HEAD
-DETAILS_INTRO_1
-DETAILS_HEADER_1
-DETAILS_SUBHEADER_1
-DETAILS_INTRO_2
-DETAILS_HEADER_2
-DETAILS_SUBHEADER_2
-DETAILS_INTRO_3
-DETAILS_HEADER_3
-DETAILS_SUBHEADER_3
-DETAILS_INTRO_4
-DETAILS_HEADER_4
-DETAILS_SUBHEADER_4
-DETAILS_INTRO_5
-DETAILS_HEADER_5
-DETAILS_SUBHEADER_5
--->
-
 <!doctype html>
 <!--[if lt IE 7]>
 	<html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
@@ -44,7 +13,6 @@ DETAILS_SUBHEADER_5
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <title>Pour Over Coffee</title>
-  <meta name="description" content="ffeel: ist ein nat&uuml;rliches Erfrischungsgetr&auml;nk, das die belebende Wirkung von Cold Brew Coffee und den frischen Geschmack von Superfruits zusammenbringt.">
   <meta name="robots" content="index">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -62,30 +30,10 @@ DETAILS_SUBHEADER_5
   <script src="portal/skripts/cycon.php.js"></script>
   <script data-main="portal/skripts/main" src="portal/skripts/lib/requirejs/require.min.js" async></script>
 
-
-  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png.html">
-  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png.html">
-  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png.html">
-  <link rel="manifest" href="index.html">
-  <link rel="mask-icon" href="index.html" color="#ffffff">
-  <meta name="theme-color" content="#ffffff">
-  <meta property="og:title" content="Pour Over Coffee" />
-  <meta property="og:image" content="portal/pics/preview/ffeel-visual-previewsite.jpg" />
-  <meta property="og:url" content="http://ffeel.de/" />
-  <meta property="og:type" content="website" />
-  <meta property="og:site_name" content="Melitta&reg; ffeel:" />
-  <meta property="og:description" content="ffeel: ist ein nat&uuml;rliches Erfrischungsgetr&auml;nk, das die belebende Wirkung von Cold Brew Coffee und den frischen Geschmack von Superfruits zusammenbringt."
-  />
-
   <link href="assets/css/customized.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
-
-  <!--[if lt IE 8]>
-<p class="browserupgrade">Sie verwenden derzeit einen <strong>nicht zeitgemäßen</strong> Browser. Bitte <a href="http://browsehappy.com/">aktuelisieren Sie Ihren Browser.</a></p>
-<![endif]-->
-
   <!-- Google Analytics -->
   <script>
     (function (i, s, o, g, r, a, m) { i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () { (i[r].q = i[r].q || []).push(arguments) }, i[r].l = 1 * new Date(); a = s.createElement(o), m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m) })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
@@ -142,36 +90,6 @@ NAVIGATION BAR
             </div>
             <div id="navbar" class="collapse">
               <a href="" target="_self"><img class="graphic logo" src="assets/beans.svg"></a>
-              <!-- <div class="float-helper">
-                <div class="wrapper">
-                  <div class="mb-64-mobile"></div>
-                  <ul>
-                    <li>
-                      <a href="index.html#about" target="_self" class="ebene-1 text text-medium larseit-medium text-uppercase text-white"><span>About</span></a>
-                    </li>
-                    <li>
-                      <a href="index.html#sorten" target="_blank" class="ebene-1 text text-medium larseit-medium text-uppercase text-white"><span>Sorten</span></a>
-                    </li>
-                    <li>
-                      <a href="index.html#ffeel" target="_self" class="ebene-1 text text-medium larseit-medium text-uppercase text-white"><span>#ffeel</span></a>
-                    </li>
-                    <li>
-                      <a href="index.html#footer" target="_self" class="ebene-1 text text-medium larseit-medium text-uppercase text-white"><span>Kontakt</span></a>
-                    </li>
-                  </ul>
-                  <div class="mb-64-mobile"></div>
-                  <ul class="meta">
-                    <li>
-                      <a href="https://www.facebook.com/ffeel-768919839934570/" target="_blank" class="ebene-1 notext"><img class="graphic icon" src="portal/navigationen/pics/facebook.svg" /><span>Icon Facebook</span></a>
-                    </li>
-                    <li>
-                      <a href="https://www.instagram.com/ffeeldrink/" target="_blank" class="ebene-1 notext"><img class="graphic icon" src="portal/navigationen/pics/instagram.svg" /><span>Icon Instagram</span></a>
-                    </li>
-                    <li>
-                      <a href="mailto:ffeel@melitta.de" target="_self" class="ebene-1 notext"><img class="graphic icon" src="portal/navigationen/pics/email.svg" /><span>Icon Mail</span></a>
-                    </li>
-                  </ul>
-                </div> -->
             </div>
         </div>
         </nav>
@@ -406,15 +324,18 @@ FEATURES - (Icons with Headline and Subheadline)
 
 
   <script>
-    function addScollListenerToId(id) {
-      element = document.getElementById(id)
-      new Waypoint({
-        element: element,
-        handler: function () {
-          logAction("scrollPoint-" + window.location.search.replace('?', ''), id)
-        }
-      })
-    }
+<<<<<<< HEAD
+  function addScollListenerToId(id) {
+    element = document.getElementById(id)
+    new Waypoint({
+      element: element,
+      handler: function() {
+        console.log("Reached WayPoint")
+        logAction("scrollPoint-" + window.location.search.replace('?', ''), id)
+      }
+    })
+    console.log("Added WayPoint for " + id)
+  }
 
     // =====================================================================
     // ADD SCROLL LISTENERS HERE!!!!
