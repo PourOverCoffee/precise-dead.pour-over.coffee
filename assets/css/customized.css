@@ -31,6 +31,10 @@ body, html{
   color: white;
 }
 
+h2 {
+  word-wrap: break-word;
+}
+
 
 /* Sections */
 
@@ -38,7 +42,7 @@ body, html{
   color: black !important;
 }
 
-#actionShot {
+.actionShot {
   height: 70%;
   width: 100%;
   background-image: url(/assets/actionShot.jpg);

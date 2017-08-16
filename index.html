@@ -16,14 +16,9 @@
   <meta name="robots" content="index">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!--<base href="http://ffeel.de/" />-->
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
   <link rel="icon" href="favicon.ico" type="image/x-icon" />
-
-
-  <link rel="canonical" href="de/ffeel-Cold-Brew-Coffee-Superfruits-Good-7.html">
   <link href="portal/css/bootstrap.min.css" rel="stylesheet" type="text/css">
-
   <link href="portal/css/main.min.css" rel="stylesheet" type="text/css" />
   <link href="common/skripts/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
 
@@ -31,58 +26,12 @@
   <script data-main="portal/skripts/main" src="portal/skripts/lib/requirejs/require.min.js" async></script>
 
   <link href="assets/css/customized.css" rel="stylesheet" type="text/css">
-
-  <!-- Facebook Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
-n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
-document,'script','https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '1434436959980967'); // Insert your pixel ID here.
-fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=1434436959980967&ev=PageView&noscript=1"
-/></noscript>
-<!-- DO NOT MODIFY -->
-<!-- End Facebook Pixel Code -->
-
-
+  <noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=1434436959980967&ev=PageView&noscript=1"
+  /></noscript>
 </head>
-
 <body>
-  <!-- Google Analytics -->
-  <script>
-    (function (i, s, o, g, r, a, m) { i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () { (i[r].q = i[r].q || []).push(arguments) }, i[r].l = 1 * new Date(); a = s.createElement(o), m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m) })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
-
-    var GA_LOCAL_STORAGE_KEY = 'ga:clientId';
-    if (window.localStorage) {
-      ga('create', {
-        'trackingId': 'UA-104468879-1',
-        'cookieDomain': 'auto',
-        'storage': 'none',
-        'clientId': localStorage.getItem(GA_LOCAL_STORAGE_KEY)
-      });
-      ga(function (tracker) {
-        localStorage.setItem(GA_LOCAL_STORAGE_KEY, tracker.get('clientId'));
-      });
-    }
-    else {
-      setTimeout("ga('send', 'event', 'Kein Bounce', '45 Sekunden')", 45000); ga('create', 'UA-104468879-1', 'auto');
-    }
-    ga('set', 'app', 'landingpage');
-    ga('send', 'pageview');
-
-
-    function ga_heartbeat() {
-      ga('send', 'event', 'Heartbeat', 'Heartbeat');
-      setTimeout(ga_heartbeat, 25 * 1000);  // 5*60*1000
-    }
-    ga_heartbeat();
-  </script>
-  <!-- End Google Analytics -->
-
+  
   <!-- 
 ####################################################################################################
 NAVIGATION BAR
@@ -93,21 +42,9 @@ NAVIGATION BAR
     <div class="container">
       <div class="row">
         <div class="col-xs-12">
-          <nav class="navbar navbar-main navbar-inverse" role="navigation">
-            <div class="navbar-header">
-              <a href="de/ffeel-Cold-Brew-Coffee-Superfruits-Good-7.html" target="_self">
-							<img class="graphic logo" src="portal/pics/layout/logo.svg">
-						</a>
-              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
-                aria-controls="navbar">
-					</button>
-              <a href=""></a>
-            </div>
-            <div id="navbar" class="collapse">
-              <a href="" target="_self"><img class="graphic logo" src="assets/beans.svg"></a>
-            </div>
-        </div>
-        </nav>
+          <nav class="navbar navbar-main navbar-inverse" role="navigation" style="margin-top: 20px">
+              <!-- <a href="" target="_self"><img class="graphic logo" src="assets/beans.svg"></a> -->
+          </nav>
       </div>
     </div>
     </div>
@@ -119,7 +56,7 @@ PITCH SECTION - (Image on left - Text on right)
 ####################################################################################################
 -->
 
-  <div class="slider main-stage emotional">
+  <div class="slider main-stage emotional" id="scroll-emotional">
     <div id="slider-342" class="slider-container" data-cycon-module="element-slider" data-option-carousel="false" data-option-paginationSelector="slider-pagination-main"
       data-option-duration="500" data-option-autoplay="1000000" data-option-paginationSelector="false">
       <div class="slider-stage">
@@ -184,7 +121,7 @@ TEXT-ONLINE SECTION - (Text on left)
 FEATURES - (Icons with Headline and Subheadline)
 ####################################################################################################
 -->
-  <div id="actionShot">
+  <div id="scroll-actionShot" class="actionShot">
   </div>
   <section class="background-story dark features">
     <div class="container">
@@ -236,7 +173,7 @@ FEATURES - (Icons with Headline and Subheadline)
     <div class="mb-96"></div>
     <div class="col-xs-12 center callToAction">
       <div class="row">
-        <p><a href="thanks.html" type="button" class="btn btn-default btn-lg tryButton" id="tryButton">Try it out!</a></p>
+        <p><a href="product.html" type="button" class="btn btn-default btn-lg tryButton productButton" id="scroll-productButton">View our plans</a></p>
       </div>
     </div>
     <div class="mb-96"></div>
@@ -247,7 +184,7 @@ FEATURES - (Icons with Headline and Subheadline)
 	SHOWROOM - (Show available products and offer call to action)
 	####################################################################################################
 	-->
-
+<!--
   <section class="background-white showroom">
     <div id="sorten" class="container">
       <div class="row">
@@ -310,6 +247,8 @@ FEATURES - (Icons with Headline and Subheadline)
         </div>
   </section>
 
+  -->
+
   <!-- 
 	####################################################################################################
 	Impressum
@@ -323,75 +262,12 @@ FEATURES - (Icons with Headline and Subheadline)
   <script src="assets/js/logging.js"></script>
   <script src="assets/js/noframework.waypoints.min.js"></script>
 
-  <script>
-  function addScollListenerToId(id) {
-    element = document.getElementById(id)
-    new Waypoint({
-      element: element,
-      handler: function() {
-        console.log("Reached WayPoint")
-        logAction("scrollPoint-" + window.location.search.replace('?', ''), id)
-      }
-    })
-    console.log("Added WayPoint for " + id)
-  }
-
-    // =====================================================================
-    // ADD SCROLL LISTENERS HERE!!!!
-    // =====================================================================
-    addScollListenerToId('tryButton')
-
-  // =====================================================================
-  </script>
-
-
-  <script>
-    jQuery(document).ready(function () {
-      $('#navbar a[href^="#"]').on('click', function (e) {
-        e.preventDefault();
-        var target = this.hash;
-        var element = $(this);
-        $target = $(target);
-
-        if (element.closest('.collapse.in').length > 0) {
-          element.closest('.collapse.in').removeClass('in');
-          var navCollapse = $('.navbar-toggle .collapsed').first();
-          var nav = $('.navbar-toggle').first();
-
-          if (navCollapse.length === 0) {
-            nav.addClass('collapsed');
-          }
-        }
-
-        if ($('body.no-scroll').length > 0) {
-          $('body').first().removeClass('no-scroll');
-        }
-
-        $('html, body').stop().animate({
-          'scrollTop': $target.offset().top //no need of parseInt here
-        }, 900, 'swing', function () {
-          window.location.hash = target;
-        });
-      });
-
-      $('.navbar-toggle').on('touchstart click', function (e) {
-        $('body').first().toggleClass('no-scroll');
-      });
-    });
-  </script>
-
+  <script src="assets/js/script.js"></script>
   <script src="portal/skripts/lib/jquery/jquery.scrolldepth.min.js"></script>
   <script>
     jQuery(function () {
       jQuery.scrollDepth();
-    });
-    $('.tryButton').each(function() { $(this).attr('href', 'thanks.html?product=03_organic'+'&'+window.location.search.replace('?', '')) })
-    
-  </script>
-  <script>
-    fbq('track', 'MoreInformation', {
-    type: 'info'
-    });          
+    });    
   </script>
       
 </body>
