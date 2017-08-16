@@ -31,6 +31,24 @@
   <script data-main="portal/skripts/main" src="portal/skripts/lib/requirejs/require.min.js" async></script>
 
   <link href="assets/css/customized.css" rel="stylesheet" type="text/css">
+
+  <!-- Facebook Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1434436959980967'); // Insert your pixel ID here.
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1434436959980967&ev=PageView&noscript=1"
+/></noscript>
+<!-- DO NOT MODIFY -->
+<!-- End Facebook Pixel Code -->
+
+
 </head>
 
 <body>
@@ -64,24 +82,6 @@
     ga_heartbeat();
   </script>
   <!-- End Google Analytics -->
-  <script>
-      window.fbAsyncInit = function() {
-        FB.init({
-          appId      : '1742936819340264',
-          xfbml      : true,
-          version    : 'v2.10'
-        });
-        FB.AppEvents.logPageView();
-      };
-    
-      (function(d, s, id){
-         var js, fjs = d.getElementsByTagName(s)[0];
-         if (d.getElementById(id)) {return;}
-         js = d.createElement(s); js.id = id;
-         js.src = "//connect.facebook.net/en_US/sdk.js";
-         fjs.parentNode.insertBefore(js, fjs);
-       }(document, 'script', 'facebook-jssdk'));
-    </script>
 
   <!-- 
 ####################################################################################################
@@ -320,27 +320,6 @@ FEATURES - (Icons with Headline and Subheadline)
   <script src="assets/js/logging.js"></script>
   <script src="assets/js/noframework.waypoints.min.js"></script>
 
-  <!-- Facebook Pixel Code -->
-  <script>
-    !function (f, b, e, v, n, t, s) {
-      if (f.fbq) return; n = f.fbq = function () {
-        n.callMethod ?
-        n.callMethod.apply(n, arguments) : n.queue.push(arguments)
-      }; if (!f._fbq) f._fbq = n;
-      n.push = n; n.loaded = !0; n.version = '2.0'; n.queue = []; t = b.createElement(e); t.async = !0;
-      t.src = v; s = b.getElementsByTagName(e)[0]; s.parentNode.insertBefore(t, s)    
-}(window,
-      document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '1434436959980967'); // Insert your pixel ID here.
-    fbq('track', 'PageView');
-
-  </script>
-  <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1434436959980967&ev=PageView&noscript=1"
-    /></noscript>
-  <!-- DO NOT MODIFY -->
-  <!-- End Facebook Pixel Code -->
-
-
   <script>
   function addScollListenerToId(id) {
     element = document.getElementById(id)
@@ -403,8 +382,15 @@ FEATURES - (Icons with Headline and Subheadline)
     jQuery(function () {
       jQuery.scrollDepth();
     });
-    $('.tryButton').each(function() { this.attr('href', 'thanks.html?product=03_organic'+'&'+window.location.search.replace('?', '')) })
+    $('.tryButton').each(function() { $(this).attr('href', 'thanks.html?product=03_organic'+'&'+window.location.search.replace('?', '')) })
+    
   </script>
+  <script>
+    fbq('track', 'MoreInformation', {
+    type: 'info'
+    });          
+  </script>
+      
 </body>
 
 </html>
