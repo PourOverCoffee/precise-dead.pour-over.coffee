@@ -17,7 +17,7 @@ body, html{
 }
 
 /* NEWSLETTER SIGNUP */
-.callToAction  a, .tryButton {
+.callToAction  a, .tryButton, .productButton {
   background: #91c11e;
   border: none;
   border-radius: 2px;
@@ -25,7 +25,7 @@ body, html{
   color: white;
 }
 
-.callToAction  a:hover,  .tryButton:hover{
+.callToAction  a:hover,  .tryButton:hover, .productButton:hover {
   background: #79a119;
   border: none;
   color: white;

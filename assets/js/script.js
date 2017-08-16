@@ -9,6 +9,10 @@
   fbq('init', '1434436959980967'); // Insert your pixel ID here.
   fbq('track', 'PageView');
 
+  fbq('track', 'Search', {
+    search_string: findGetParameter('product')
+  });
+
 // ============================================================================
 // Google Analytics
   (function (i, s, o, g, r, a, m) { i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () { (i[r].q = i[r].q || []).push(arguments) }, i[r].l = 1 * new Date(); a = s.createElement(o), m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m) })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
@@ -46,11 +50,19 @@ function addScollListenerToId(id) {
     new Waypoint({
       element: element,
       handler: function() {
-        console.log("Reached WayPoint")
+        console.log("Reached WayPoint " + id)
         logAction("scrollPoint-" + window.location.search.replace('?', ''), id)
-      }
+        fbq('track', 'scroll', {
+		  element: id
+		});         
+		fbq('track', 'scroll-'+id, {
+		  element: id
+		}); 
+		ga('send', 'event', 'scroll', id);
+      },
+      offset: 'bottom-in-view'
     })
-    console.log("Added WayPoint for " + id)
+    // console.log("Added WayPoint for " + id)
   }
 
   // Add scroll listeners
@@ -58,7 +70,35 @@ function addScollListenerToId(id) {
 
 // ============================================================================
 // Try Buttons
-$('.tryButton').each(function() { $(this).attr('href', 'thanks.html?product=03_organic'+'&'+window.location.search.replace('?', '')) })
+$('.tryButton').each(function() { 
+	$(this).attr('href', 'thanks.html?product=04_'+ window.location.host + '&'+window.location.search.replace('?', '')) 
+})
+$('.productButton').each(function() { 
+	$(this).attr('href', 'product.html?product=04_'+ window.location.host + '&'+window.location.search.replace('?', '')) 
+})
+
+$('.tryButton, .productButton').each(function() {
+  $(this).click(function(event) {
+    // Remember the link href
+    var href = this.href;
+
+    // Don't follow the link
+    event.preventDefault();
+
+    logAction("clickButton-" + this.id)
+    fbq('track', 'clickButton', {
+	  element: this.id
+	});         
+	fbq('track', 'clickButton-'+this.id, {
+	  element: this.id
+	}); 
+	ga('send', 'event', 'clickButton', this.id);
+
+	window.setTimeout(function() {
+        window.location = href;
+	}, 1000);
+  })
+})
 
 
 // ============================================================================
