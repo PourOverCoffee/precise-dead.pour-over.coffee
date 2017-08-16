@@ -32,6 +32,11 @@ body, html{
 }
 
 
+/* Sections */
+.showroom .text {
+  color: black !important;
+}
+
 div.emotional {
   color: black;
   background: white;
