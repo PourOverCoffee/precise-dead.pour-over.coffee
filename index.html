@@ -289,13 +289,6 @@ FEATURES - (Icons with Headline and Subheadline)
   </section>
 
   <script src="portal/skripts/lib/jquery/jquery-1.11.3.min.js"></script>
-  <script src="portal/skripts/lib/jquery/jquery.scrolldepth.min.js"></script>
-  <script>
-    jQuery(function () {
-      jQuery.scrollDepth();
-    });
-	  $('#tryButton').attr('href', 'thanks.html?product=03_organic'+'&'+window.location.search.replace('?', ''))
-  </script>
   <script src="assets/js/logging.js"></script>
   <script src="assets/js/noframework.waypoints.min.js"></script>
 
@@ -371,6 +364,14 @@ n.callMethod ?
         $('body').first().toggleClass('no-scroll');
       });
     });
+  </script>
+
+  <script src="portal/skripts/lib/jquery/jquery.scrolldepth.min.js"></script>
+  <script>
+    jQuery(function () {
+      jQuery.scrollDepth();
+    });
+    $('#tryButton').attr('href', 'thanks.html?product=03_organic'+'&'+window.location.search.replace('?', ''))
   </script>
 </body>
 
