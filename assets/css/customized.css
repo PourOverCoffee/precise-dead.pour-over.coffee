@@ -16,10 +16,6 @@ body, html{
   color: white !important;
 }
 
-/* @ override */
-.text {
-  color: white !important;
-}
 /* NEWSLETTER SIGNUP */
 .callToAction  a{
   background: #91c11e;
@@ -33,6 +29,23 @@ body, html{
 
 
 /* Sections */
+.emotional .text {
+  color: black !important;
+}
+
+#actionShot {
+  height: 90%;
+  width: 100%;
+  background-image: url(/assets/actionShot.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 66% center;
+}
+
+.features .text {
+  color: white !important;
+}
+
 .showroom .text {
   color: black !important;
 }
