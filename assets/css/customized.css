@@ -29,17 +29,18 @@ body, html{
 
 
 /* Sections */
+
 .emotional .text {
   color: black !important;
 }
 
 #actionShot {
-  height: 90%;
+  height: 70%;
   width: 100%;
   background-image: url(/assets/actionShot.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: 66% center;
+  background-position: 66% 8%;
 }
 
 .features .text {
